@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore - Tu Librería Online</title>
+    <meta name="description" content="Encuentra los mejores libros en nuestra tienda online. Ofertas especiales y nuevos lanzamientos.">
+    <meta name="keywords" content="libros, tienda online, ofertas, nuevos lanzamientos, lectura">
+    
+    <meta property="og:title" content="BookStore - Tu Librería Online">
+    <meta property="og:description" content="Encuentra los mejores libros en nuestra tienda online">
+    
+    <meta name="twitter:title" content="BookStore - Tu Librería Online">
+    <meta name="twitter:description" content="Encuentra los mejores libros en nuestra tienda online">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #E8F4F8;
+            --accent-color: #E74C3C;
+            --text-color: #34495E;
+            --bg-color: #FFFFFF;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply bg-[var(--bg-color)] text-[var(--text-color)] font-sans;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity;
+        }
+        
+        .btn-accent {
+            @apply bg-[var(--accent-color)] text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/SearchBar.js"></script>
+    <script type="text/babel" src="components/CartIcon.js"></script>
+    <script type="text/babel" src="components/Carousel.js"></script>
+    <script type="text/babel" src="components/ProductSidebar.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
